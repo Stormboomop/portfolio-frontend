@@ -297,8 +297,7 @@ async function loadProjects() {
 
             <div class="project-card">
 
-                <img
-src="<img src="https://portfolio-backend-tpo1.onrender.com/${project.image}"
+                <img src="https://portfolio-backend-tpo1.onrender.com/${project.image}"
 onerror="this.src='https://placehold.co/600x400?text=No+Image'"
                     alt="${project.title}">
 
