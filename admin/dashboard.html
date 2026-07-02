@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        Portfolio CMS
+    </div>
+
+    <div class="menu">
+
+        <button class="nav-btn active" data-tab="portfolio">
+            Portfolio
+        </button>
+
+        <button class="nav-btn" data-tab="projects">
+            Projects
+        </button>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="main-content">
+
+    <header>
+
+        <h1>Dashboard</h1>
+
+        <p>Manage your portfolio website.</p>
+
+    </header>
+
+
+    <!-- PORTFOLIO TAB -->
+
+    <section id="portfolioSection" class="tab active">
+
+        <div class="card">
+
+            <h2>Portfolio Information</h2>
+
+            <div class="form-group">
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Tagline</label>
+
+                <input
+                    type="text"
+                    id="tagline">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>About</label>
+
+                <textarea
+                    id="about"
+                    rows="8"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Instagram</label>
+
+                <input
+                    type="text"
+                    id="instagram">
+
+            </div>
+
+            <button
+                class="primary-btn"
+                id="savePortfolio">
+
+                Save Changes
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS TAB -->
+
+    <section id="projectsSection" class="tab">
+
+        <div class="top-bar">
+
+            <h2>Projects</h2>
+
+            <button
+                class="primary-btn"
+                id="showAddModal">
+
+                + Add Project
+
+            </button>
+
+        </div>
+
+        <div
+            id="projectsGrid"
+            class="projects-grid">
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ADD / EDIT MODAL -->
+
+<div
+    id="projectModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <span
+            class="close"
+            id="closeModal">
+
+            &times;
+
+        </span>
+
+        <h2 id="modalTitle">
+
+            Add Project
+
+        </h2>
+
+        <input
+            id="projectTitle"
+            placeholder="Project Title">
+
+        <div class="form-group">
+
+    <label>Project Thumbnail</label>
+
+    <input
+        type="file"
+        id="projectImage"
+        accept="image/*">
+
+    <img
+        id="imagePreview"
+        style="
+            width:100%;
+            margin-top:15px;
+            border-radius:12px;
+            display:none;
+            max-height:220px;
+            object-fit:cover;
+        ">
+
+</div>
+
+        <input
+            id="projectLink"
+            placeholder="Instagram Link">
+
+        <button
+            class="primary-btn"
+            id="saveProject">
+
+            Save Project
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
