@@ -31,7 +31,7 @@ async function loadPortfolio() {
 
             <div class="card">
 
-                <img src="https://portfolio-backend-tpo1.onrender.com/${project.image}" alt="${project.title}">
+                <img src="${project.image}" alt="${project.title}">
 
                 <div class="card-content">
 

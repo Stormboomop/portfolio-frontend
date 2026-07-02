@@ -297,7 +297,7 @@ async function loadProjects() {
 
             <div class="project-card">
 
-                <img src="https://portfolio-backend-tpo1.onrender.com/${project.image}"
+                <img src="${project.image}"
 onerror="this.src='https://placehold.co/600x400?text=No+Image'"
                     alt="${project.title}">
 
@@ -500,8 +500,7 @@ async function editProject(id) {
 
     if (imagePreview) {
 
-        imagePreview.src =
-            "https://portfolio-backend-tpo1.onrender.com/" + project.image;
+        imagePreview.src = project.image;
 
         imagePreview.style.display = "block";
 
