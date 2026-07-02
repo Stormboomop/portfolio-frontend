@@ -116,35 +116,25 @@ Portfolio CMS
 
 # 📷 Screenshots
 
-## Home Page
+## 🏠 Homepage
 
-> Add a screenshot here
+![Homepage](screenshots/home.png)
 
----
+## 👤 About Section
 
-## Projects Section
+![About](screenshots/about.png)
 
-> Add a screenshot here
+## 💼 Portfolio
 
----
+![Portfolio](screenshots/portfolio.png)
 
-## Admin Login
+## 🚀 Projects
 
-> Add a screenshot here
+![Projects](screenshots/projects.png)
 
----
+## 🌐 Complete Website
 
-## Dashboard
-
-> Add a screenshot here
-
----
-
-## Add Project
-
-> Add a screenshot here
-
----
+![Complete Website](screenshots/full-site.png)
 
 # 🔐 Authentication
 
